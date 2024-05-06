@@ -22,7 +22,7 @@ To start using ModernUI in your project, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/ModernUI_Component_Library.git
+    git clone https://github.com/elijahgummer/ModernUI.git
     ```
 
 2. Include the compiled CSS file (`modernui.css`) in your HTML:
@@ -37,10 +37,6 @@ To start using ModernUI in your project, follow these steps:
     <button class="btn-primary">Primary Button</button>
     <button class="btn-secondary">Secondary Button</button>
     ```
-
-## Demo
-
-Check out the [live demo](https://your-username.github.io/ModernUI_Component_Library/) to see ModernUI in action.
 
 ## Contributing
 
