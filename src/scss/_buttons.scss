@@ -1,0 +1,46 @@
+// _buttons.scss
+
+// Primary Button
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+// Secondary Button
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #495057;
+    }
+}
+
+// Tertiary Button
+.btn-tertiary {
+    background-color: #ffc107;
+    color: #212529;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #e0a800;
+    }
+}
