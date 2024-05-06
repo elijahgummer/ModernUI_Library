@@ -9,8 +9,8 @@
     <!-- Link to the compiled CSS -->
     <link rel="stylesheet" href="dist/css/modernui.css" />
     <link rel="stylesheet" href="dist/css/animations.css" />
-    <link rel="stylesheet" href="dist/css/cards.css">
-    <link rel="stylesheet" href="dist/css/navigation.css">
+    <link rel="stylesheet" href="dist/css/cards.css" />
+    <link rel="stylesheet" href="dist/css/navigation.css" />
     <!-- Optional: You can link to a Google Font if needed -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -39,39 +39,47 @@
   </head>
   <body>
     <nav class="navbar">
-        <a href="#" class="navbar-brand">Brand</a>
-        <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-        </ul>
+      <a href="#" class="navbar-brand">Brand</a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+      </ul>
     </nav>
 
     <div class="container">
-        <div class="sidebar" id="sidebar">
-            <div class="sidebar-toggle" id="sidebarToggle">&#9776;</div>
-            <ul class="sidebar-nav">
-                <li class="sidebar-item"><a href="#" class="sidebar-link">Dashboard</a></li>
-                <li class="sidebar-item"><a href="#" class="sidebar-link">Products</a></li>
-                <li class="sidebar-item"><a href="#" class="sidebar-link">Customers</a></li>
-                <li class="sidebar-item"><a href="#" class="sidebar-link">Reports</a></li>
-            </ul>
-        </div>
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-toggle" id="sidebarToggle">&#9776;</div>
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Dashboard</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Products</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Customers</a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">Reports</a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="content">
-            <h1>Main Content Area</h1>
-            <p>This is the main content area.</p>
-        </div>
+      <div class="content">
+        <h1>Main Content Area</h1>
+        <p>This is the main content area.</p>
+      </div>
     </div>
 
     <script>
-        const sidebar = document.getElementById('sidebar');
-        const sidebarToggle = document.getElementById('sidebarToggle');
+      const sidebar = document.getElementById("sidebar");
+      const sidebarToggle = document.getElementById("sidebarToggle");
 
-        sidebarToggle.addEventListener('click', () => {
-            sidebar.classList.toggle('open');
-        });
+      sidebarToggle.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+      });
     </script>
     <div class="container">
       <h1>Welcome to ModernUI Component Library</h1>
@@ -92,7 +100,9 @@
 
     <div class="card card-hover">This is a card with hover animation</div>
 
-    
+    <div class="shake">Shake animation</div>
+    <div class="bounce">Bounce animation</div>
+    <div class="pulse">Pulse animation</div>
+    <div class="rotate">Rotate animation</div>
   </body>
-
 </html>
