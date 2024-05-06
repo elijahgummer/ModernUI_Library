@@ -99,3 +99,52 @@
 .rotate {
     animation: rotate 2s linear infinite;
 }
+
+// Flip animation
+@keyframes flip {
+    0% { transform: perspective(400px) rotateY(0); }
+    100% { transform: perspective(400px) rotateY(360deg); }
+}
+
+.flip {
+    animation: flip 1s ease;
+}
+
+// Fade out animation
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease;
+}
+
+// Zoom in animation
+@keyframes zoomIn {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+.zoom-in {
+    animation: zoomIn 0.5s ease;
+}
+
+// Swing animation
+@keyframes swing {
+    0% { transform: rotate(0); }
+    20% { transform: rotate(15deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(5deg); }
+    80% { transform: rotate(-5deg); }
+    100% { transform: rotate(0); }
+}
+
+.swing {
+    transform-origin: top center;
+    animation: swing 1s ease;
+}
