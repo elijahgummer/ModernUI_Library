@@ -55,3 +55,47 @@
 .scale-in {
     animation: scaleIn 0.5s ease;
 }
+
+// Shake animation
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(5deg); }
+    50% { transform: translateX(5px) rotate(-5deg); }
+    75% { transform: translateX(-5px) rotate(5deg); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.5s ease;
+}
+
+// Bounce animation
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.bounce {
+    animation: bounce 0.5s ease;
+}
+
+// Pulse animation
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 1s infinite alternate;
+}
+
+// Rotate animation
+@keyframes rotate {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+.rotate {
+    animation: rotate 2s linear infinite;
+}
