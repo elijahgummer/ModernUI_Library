@@ -24,7 +24,7 @@
         align-items: center;
         flex-direction: column;
         height: 100vh;
-        background-color: #f8f9fa;
+        background-color: #3d6185;
       }
       .container {
         text-align: center;
@@ -35,31 +35,41 @@
     </style>
   </head>
   <body>
-    <!-- Alerts -->
-    <div class="alert alert-info">Info Alert</div>
-    <div class="alert alert-success">Success Alert</div>
-    <div class="alert alert-warning">Warning Alert</div>
-    <div class="alert alert-danger">Danger Alert</div>
-
-    <!-- Badges -->
-    <span class="badge badge-primary">Primary</span>
-    <span class="badge badge-secondary">Secondary</span>
-    <span class="badge badge-success">Success</span>
-    <span class="badge badge-danger">Danger</span>
-    <span class="badge badge-warning">Warning</span>
-    <span class="badge badge-info">Info</span>
-    <span class="badge badge-light">Light</span>
-    <span class="badge badge-dark">Dark</span>
-
-    <!-- Progress bar -->
-    <div class="progress">
-      <div class="progress-bar" style="width: 75%"></div>
+    <!-- Card -->
+    <div class="card">
+      <h2>Card Title</h2>
+      <p>This is a card component. You can put any content here.</p>
     </div>
 
-    <!-- Tooltip -->
-    <div class="tooltip">
-      Hover over me
-      <span class="tooltip-text">Tooltip text</span>
+    <!-- Pagination -->
+    <ul class="pagination">
+      <li class="page-item"><a href="#" class="page-link">&laquo;</a></li>
+      <li class="page-item"><a href="#" class="page-link">1</a></li>
+      <li class="page-item"><a href="#" class="page-link active">2</a></li>
+      <li class="page-item"><a href="#" class="page-link">3</a></li>
+      <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+    </ul>
+
+    <!-- Modal trigger button -->
+    <button id="modalTrigger" class="modal-trigger">Open Modal</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-close">&times;</span>
+          <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+          <p>This is a modal. You can put any content here.</p>
+        </div>
+        <div class="modal-footer">
+          <h2>Modal Footer</h2>
+        </div>
+      </div>
     </div>
+
+    <!-- Include modernui.js -->
+    <script src="dist/js/modernui.js"></script>
   </body>
 </html>
