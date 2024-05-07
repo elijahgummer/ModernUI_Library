@@ -35,106 +35,31 @@
     </style>
   </head>
   <body>
-    <nav class="navbar">
-      <a href="#" class="navbar-brand">Brand</a>
-      <ul class="navbar-nav">
-        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Alerts -->
+    <div class="alert alert-info">Info Alert</div>
+    <div class="alert alert-success">Success Alert</div>
+    <div class="alert alert-warning">Warning Alert</div>
+    <div class="alert alert-danger">Danger Alert</div>
 
-    <div class="container">
-      <div class="sidebar" id="sidebar">
-        <div class="sidebar-toggle" id="sidebarToggle">&#9776;</div>
-        <ul class="sidebar-nav">
-          <li class="sidebar-item">
-            <a href="#" class="sidebar-link">Dashboard</a>
-          </li>
-          <li class="sidebar-item">
-            <a href="#" class="sidebar-link">Products</a>
-          </li>
-          <li class="sidebar-item">
-            <a href="#" class="sidebar-link">Customers</a>
-          </li>
-          <li class="sidebar-item">
-            <a href="#" class="sidebar-link">Reports</a>
-          </li>
-        </ul>
-      </div>
+    <!-- Badges -->
+    <span class="badge badge-primary">Primary</span>
+    <span class="badge badge-secondary">Secondary</span>
+    <span class="badge badge-success">Success</span>
+    <span class="badge badge-danger">Danger</span>
+    <span class="badge badge-warning">Warning</span>
+    <span class="badge badge-info">Info</span>
+    <span class="badge badge-light">Light</span>
+    <span class="badge badge-dark">Dark</span>
+
+    <!-- Progress bar -->
+    <div class="progress">
+      <div class="progress-bar" style="width: 75%"></div>
     </div>
 
-    <script>
-      const sidebar = document.getElementById("sidebar");
-      const sidebarToggle = document.getElementById("sidebarToggle");
-
-      sidebarToggle.addEventListener("click", () => {
-        sidebar.classList.toggle("open");
-      });
-    </script>
-    <div class="container">
-      <button class="btn-primary slide-in-left">Primary Button</button>
-      <button class="btn-secondary">Secondary Button</button>
-      <button class="btn-tertiary">Tertiary Button</button>
-      <div class="spacer"></div>
-      <h2>Typography Test</h2>
-      <p>This is a paragraph styled with ModernUI typography.</p>
-
-      <div class="fade-in">Content fades in</div>
-      <div class="slide-in-left">Content slides in from left</div>
-      <div class="slide-in-right">Content slides in from right</div>
-      <div class="scale-in">Content scales in</div>
+    <!-- Tooltip -->
+    <div class="tooltip">
+      Hover over me
+      <span class="tooltip-text">Tooltip text</span>
     </div>
-    <div class="card">This is a simple card</div>
-
-    <div class="card card-hover">This is a card with hover animation</div>
-
-    <div class="shake">Shake animation</div>
-    <div class="bounce">Bounce animation</div>
-    <div class="pulse">Pulse animation</div>
-    <div class="rotate">Rotate animation</div>
-    <div class="flip">Flip animation</div>
-    <div class="fade-out">Fade out animation</div>
-    <div class="zoom-in">Zoom in animation</div>
-    <div class="swing">Swing animation</div>
-
-    <form class="form">
-      <fieldset class="fieldset">
-        <legend class="legend">Contact Form</legend>
-        <div>
-          <label for="name" class="label">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            class="input"
-            placeholder="Enter your name"
-          />
-        </div>
-        <div>
-          <label for="email" class="label">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="input"
-            placeholder="Enter your email"
-          />
-        </div>
-        <div>
-          <label for="message" class="label">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            class="textarea"
-            placeholder="Enter your message"
-          ></textarea>
-        </div>
-        <div>
-          <button type="submit" class="button">Submit</button>
-        </div>
-      </fieldset>
-    </form>
   </body>
 </html>
