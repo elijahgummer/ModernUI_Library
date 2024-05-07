@@ -84,3 +84,132 @@
     color: green;
     font-size: 14px;
 }
+// _forms.scss
+
+// Form checkbox
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #aaa;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #007bff;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+// Form radio button
+.radio-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.radio-container:hover input ~ .radio-checkmark {
+    border-color: #aaa;
+}
+
+.radio-container input:checked ~ .radio-checkmark {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.radio-checkmark:after {
+    content: "";
+    display: none;
+}
+
+.radio-container input:checked ~ .radio-checkmark:after {
+    display: block;
+}
+
+.radio-container .radio-checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+// Form select with icon
+.select-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.select {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="black"><path fill-rule="evenodd" d="M10 13a.997.997 0 01-.707-.293l-4-4a.999.999 0 111.414-1.414L10 10.586l3.293-3.293a.999.999 0 111.414 1.414l-4 4A.997.997 0 0110 13z" clip-rule="evenodd"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 15px;
+}
+
